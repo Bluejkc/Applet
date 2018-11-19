@@ -1,0 +1,27 @@
+<!--components/me/system/system.wxml-->
+<view class='system' wx:for="{{system}}" wx:key="{{index}}">
+  <view class='model message'>
+    <view>手机名称：</view>
+    <view>{{item.brand}}</view>
+  </view>
+  <view class='model message'>
+    <view>手机型号：</view>
+    <view>{{item.model}}</view>
+  </view>
+  <view class='version message'>
+    <view>微信版本：</view>
+    <view>{{item.version}}</view>
+  </view>
+  <view class='sys message'>
+    <view>客户端平台：</view>
+    <view>{{item.platform}}</view>
+  </view>
+  <view class='sys message'>
+    <view>客户端基础库版本：</view>
+    <view>{{item.SDKVersion}}</view>
+  </view>
+  <view class='sys message'>
+    <view>Android版本：</view>
+    <view>{{item.system}}</view>
+  </view>
+</view>

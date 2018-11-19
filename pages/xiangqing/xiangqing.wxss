@@ -1,0 +1,6 @@
+/* pages/xiangqing/xiangqing.wxss */
+
+.text{
+  text-align: center;
+  font-weight: bold;
+}

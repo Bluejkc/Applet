@@ -1,0 +1,67 @@
+<!--pages/me/me.wxml-->
+<view class="medata">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+
+  <view class='details'>
+    <!-- <navigator url="../xiangqing/xiangqing" hover-class="navigator-class" class='login list'>
+      <image src='../../img/me/login.png' class='img'></image>
+      <view class='text'>登录</view>
+      <image src='../../img/me/next.png' class='img1'></image>
+    </navigator> -->
+
+    <navigator url="/components/me/personal/personal" hover-class="navigator-class" class='personal list'>
+      <image src='../../img/me/personal.png' class='img'></image>
+      <view class='text'>个人信息</view>
+      <image src='../../img/me/next.png' class='img1'></image>
+    </navigator>
+
+    <navigator url="/components/me/love/love" hover-class="navigator-class" class='love list'>
+      <image src='../../img/me/love.png' class='img'></image>
+      <view class='text'>我的收藏</view>
+      <image src='../../img/me/next.png' class='img1'></image>
+    </navigator>
+
+    <view class='call list' bindtap='phone'>
+      <image src='../../img/me/phone.png' class='img'></image>
+      <view class='text'>联系我们</view>
+      <image src='../../img/me/next.png' class='img1'></image>
+    </view>
+
+    <navigator url="/components/me/action/action" hover-class="navigator-class" class='action list'>
+      <image src='../../img/me/action.png' class='img'></image>
+      <view class='text'>小功能</view>
+      <image src='../../img/me/next.png' class='img1'></image>
+    </navigator>
+
+    <navigator url="/components/me/system/system" hover-class="navigator-class" class='system list'>
+      <image src='../../img/me/xitong.png' class='img'></image>
+      <view class='text'>系统信息</view>
+      <image src='../../img/me/next.png' class='img1'></image>
+    </navigator>
+
+    <navigator url="/components/me/we/we" hover-class="navigator-class" class='we list'>
+      <image src='../../img/me/about.png' class='img'></image>
+      <view class='text'>关于我们</view>
+    </navigator>
+  </view>
+
+  <view class="phone {{show ?'showphone':''}}">
+    <view class='callphone'>
+      <view class='calltext'>
+        是否拨打{{phone}}？
+      </view>
+      <view class='yesno'>
+        <view bindtap='cancel'>取消</view>
+        <view bindtap='confirm'>确定</view>
+      </view>
+    </view>
+  </view>
+
+
+</view>

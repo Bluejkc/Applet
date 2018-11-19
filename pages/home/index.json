@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "推荐",
+
+ 
+  "usingComponents": {
+    "news": "/components/home/news/news"
+  },
+  "onReachBottomDistance": 50
+}

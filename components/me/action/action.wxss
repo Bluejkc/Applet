@@ -1,0 +1,4 @@
+/* components/me/action/action.wxss */
+text{
+  text-align: center;
+}

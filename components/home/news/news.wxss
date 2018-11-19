@@ -1,0 +1,7 @@
+/* components/home/news/news.wxss */
+@import '/style/weui.wxss';
+
+.weui-media-box__desc{
+  display: inline-block;
+  margin-right: 5%;
+}

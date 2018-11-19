@@ -1,0 +1,51 @@
+{
+  "pages": [
+    "pages/home/index",
+    "pages/phone/phone",
+    "pages/pc/pc",
+    "pages/me/me",
+    "pages/xiangqing/xiangqing",
+    "components/me/system/system",
+    "components/me/we/we",
+    "components/me/action/action",
+    "components/me/love/love",
+    "components/me/personal/personal"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#1296db",
+    "navigationBarTitleText": "老陈Dream",
+    "navigationBarTextStyle": "#fff"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/home/index",
+        "text": "推荐",
+        "iconPath": "img/bottom/zhuye.png",
+        "selectedIconPath": "img/bottom/zhuye1.png"
+      },
+      {
+        "pagePath": "pages/phone/phone",
+        "text": "手机",
+        "iconPath": "img/bottom/phone.png",
+        "selectedIconPath": "img/bottom/phone1.png"
+      },
+      {
+        "pagePath": "pages/pc/pc",
+        "text": "电脑",
+        "iconPath": "img/bottom/pc.png",
+        "selectedIconPath": "img/bottom/pc1.png"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "text": "个人",
+        "iconPath": "img/bottom/me.png",
+        "selectedIconPath": "img/bottom/me1.png"
+      }
+    ],
+    "selectedColor": "#1296db",
+    "color": "#8a8a8a"
+  },
+  "debug": true
+}
